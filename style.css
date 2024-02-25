@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+main>section {
+    background-color: bisque;
+    border: 2px dotted navy;
+    padding: 20px 70px;
+    border-radius: 16px;
+}
+
+main>section>div:nth-child(1) {
+    display: flex;
+}
+
+main>section>div:nth-child(1)>input {
+    padding: 10px 15px;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+}
+
+main>section>div:nth-child(1)>:nth-child(2) {
+    cursor: pointer;
+}
+
+main>section>div:nth-child(2),
+main>section>div:nth-child(3) {
+    margin-top: 20px;
+}
+
+main>section>div:nth-child(2)>ul,
+main>section>div:nth-child(3)>ul {
+    margin: 0 20px;
+}
+
+main>section>div:nth-child(2)>ul>li,
+main>section>div:nth-child(3)>ul>li {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main>section>div:nth-child(2)>ul>li>button,
+main>section>div:nth-child(3)>ul>li>button {
+    padding: 5px 8px;
+    cursor: pointer;
+}
+
+main>section>div:nth-child(2)>ul>li>button {
+    background-color: rgba(7, 242, 97, 0.692);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+main>section>div:nth-child(3)>ul>li>button {
+    background-color: rgba(242, 93, 7, 0.692);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        min-height: 100vh;
+        padding: 10px;
+    }
+
+    main>section {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 0px;
+    }
+    main>section>div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+    }
+    main>section>div:nth-child(1)>input {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    main>section>div:nth-child(2)>ul,
+    main>section>div:nth-child(3)>ul {
+        margin: 0px;
+    }
+}
